@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Session 5</string>
+    <string name="action_clear">Clear All</string>
+    <string name="action_Refresh">Refresh</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="real_estates_fragment_label">Mars Real Estates</string>
+    <string name="rent_real_estates">Rent Real Estates</string>
+    <string name="buy_real_estates">Buy Real Estates</string>
+    <string name="all_real_estates">All Real Estates</string>
+    <string name="real_estates_found">%d Real Estates found</string>
+    <string name="real_estate_description">This is a %s real estate with a price of %d</string>
+
+</resources>

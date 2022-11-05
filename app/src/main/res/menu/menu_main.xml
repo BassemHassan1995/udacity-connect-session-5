@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="bassem.udacity.session5.ui.MainActivity">
+
+    <item
+        android:id="@+id/view_all_menu"
+        android:title="@string/all_real_estates" />
+    <item
+        android:id="@+id/view_rent_menu"
+        android:title="@string/rent_real_estates" />
+    <item
+        android:id="@+id/view_buy_menu"
+        android:title="@string/buy_real_estates" />
+    <item
+        android:id="@+id/clear_menu"
+        android:icon="@drawable/ic_clear_all"
+        android:title="@string/action_clear"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/refresh_menu"
+        android:icon="@drawable/ic_refresh"
+        android:title="@string/action_Refresh"
+        app:showAsAction="ifRoom" />
+</menu>
