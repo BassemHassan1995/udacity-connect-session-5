@@ -15,13 +15,13 @@ import com.squareup.picasso.Picasso
 class RealEstateAdapter :
     ListAdapter<RealEstate, RealEstateAdapter.ViewHolder>(RealEstateDiffCallback()) {
 
-    class ViewHolder private constructor(val binding: RealEstateItemBinding) :
+    class ViewHolder private constructor(private val binding: RealEstateItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(item: RealEstate) {
             with(binding) {
                 val context = root.context
-                Picasso.with(context)
+                Picasso.get()
                     .load(item.imageUrl.replace("http", "https"))
                     .error(R.mipmap.ic_launcher)
                     .into(imageviewIcon, object : Callback {
@@ -29,7 +29,7 @@ class RealEstateAdapter :
                             loading.visibility = View.GONE
                         }
 
-                        override fun onError() {
+                        override fun onError(e: Exception) {
                             loading.visibility = View.GONE
                         }
 
