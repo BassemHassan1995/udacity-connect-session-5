@@ -1,4 +1,4 @@
-package bassem.udacity.session5.ui.realestates
+package bassem.udacity.session5.ui.real_estates
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -15,8 +15,6 @@ import bassem.udacity.session5.MarsApplication
 import bassem.udacity.session5.R
 import bassem.udacity.session5.data.model.Type
 import bassem.udacity.session5.databinding.FragmentRealEstatesBinding
-import bassem.udacity.session5.ui.RealEstateViewModelFactory
-import bassem.udacity.session5.ui.RealEstatesViewModel
 
 class RealEstatesFragment : Fragment() {
 

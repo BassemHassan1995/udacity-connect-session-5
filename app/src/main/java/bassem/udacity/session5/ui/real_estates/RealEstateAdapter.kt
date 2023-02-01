@@ -1,4 +1,4 @@
-package bassem.udacity.session5.ui.realestates
+package bassem.udacity.session5.ui.real_estates
 
 import android.view.LayoutInflater
 import android.view.View

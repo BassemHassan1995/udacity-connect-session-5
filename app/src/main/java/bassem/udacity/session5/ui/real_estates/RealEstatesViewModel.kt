@@ -1,4 +1,4 @@
-package bassem.udacity.session5.ui
+package bassem.udacity.session5.ui.real_estates
 
 import androidx.lifecycle.*
 import bassem.udacity.session5.data.model.RealEstate

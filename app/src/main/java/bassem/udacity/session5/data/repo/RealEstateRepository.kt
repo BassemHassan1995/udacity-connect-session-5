@@ -19,7 +19,7 @@ class RealEstateRepository(private val dao: RealEstateDao, private val apiServic
 
 //    1. Get list from api
 //    2. Save returned list to database
-//    3. In case of error... do nothing / Delete database entries
+//    3. In case of error... do nothing
     suspend fun refreshRealEstates(){
         try {
             val response = apiService.getRealEstates()
