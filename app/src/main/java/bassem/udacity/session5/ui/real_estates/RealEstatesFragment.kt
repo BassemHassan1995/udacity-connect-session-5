@@ -48,7 +48,7 @@ class RealEstatesFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         with(binding) {
-            viewModel.allRealEstates.observe(viewLifecycleOwner) {
+            viewModel.realEstates.observe(viewLifecycleOwner) {
                 adapter.submitList(it)
 //                Toast.makeText(context, getString(R.string.real_estates_found, it.size), Toast.LENGTH_SHORT).show()
             }

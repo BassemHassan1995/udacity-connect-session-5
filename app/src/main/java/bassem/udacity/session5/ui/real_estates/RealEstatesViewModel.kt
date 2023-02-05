@@ -10,7 +10,7 @@ class RealEstatesViewModel constructor(private val repository: RealEstateReposit
 
     private val type = MutableLiveData(Type.ALL)
 
-    val allRealEstates: LiveData<List<RealEstate>> = Transformations.switchMap(type) { type ->
+    val realEstates: LiveData<List<RealEstate>> = Transformations.switchMap(type) { type ->
         when (type) {
             Type.RENT -> repository.getRealEstateList(Type.RENT)
             Type.BUY -> repository.getRealEstateList(Type.BUY)
